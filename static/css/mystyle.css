@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: cyan;
+}
+label{
+    width: 150px;
+}
+input{
+    width: 200px;
+}

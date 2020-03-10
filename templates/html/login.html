@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'html/index.html' %}
+{% block body_block %}
+<h2>This is the login page!</h2>
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        <p><label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter Username"></p>
+        <p><label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password"></p>
+        <p><input type="submit" class="button btn-primary" value="Login" name="submit"></p>
+    </form>
+{% endblock %}
